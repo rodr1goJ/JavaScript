@@ -25,31 +25,23 @@
                 <input type="text" id="Produto" placeholder="Nome do produto">
             </div>
             <div class="lineInput">
-                <label>valor</label>
-                <input type="text" id="valor" placeholder="valor do produto">
+                <label>Preço</label>
+                <input type="text" id="preco" placeholder="valor do produto">
                 
             </div>
-            <button onclick="produto.adicionar()">Adicionar</button>
-            <button onclick="produto.excluir()">Excluir</button>
+            <button onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
         </div>
         <div class="content">
             <table border="1">
                 <thead>
-                    <th>ID</th>
+                    <th class="center">ID</th>
                     <th>Produto</th>
                     <th>Valor</th>
-                    <th>Ações</th>
+                    <th class="center">Ações</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mesa da sala</td>
-                        <td>1900</td>
-                        <td>
-                            <img src="img/editar.png" alt="">
-                            <img src="img/excluir.png" alt="">
-                        </td>
-                    </tr>
+                <tbody id="tbady">
+                   
                 </tbody>
             </table>
         </div>
